@@ -1,0 +1,28 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver    #
+    url: jdbc:mysql://localhost:3306/agro?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT&useSSL=true
+    username: root
+    password: Admin@1020
+    type: com.alibaba.druid.pool.DruidDataSource #type: com.alibaba.druid.pool.DruidDataSource
+  thymeleaf:
+    cache: false
+  redis:
+    host: 192.168.12.5
+    port: 6379
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
+
+
+
+
